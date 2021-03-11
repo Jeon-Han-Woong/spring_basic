@@ -3,19 +3,25 @@ package org.ict.di;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Stage {
 	
-	@Autowired
-	private Singer singer1;
+//	@Autowired
+	private Singer singer;
 	
-	public Stage(Singer singer) {
-		this.singer1  =singer ;
+//	생성자 주입 막음
+//	public Stage(Singer singer) {
+//		this.singer = singer ;
+//	}
+	
+//	세터 주입 설정
+	public void setSinger(Singer singer) {
+		this.singer = singer;
 	}
 	
 	public void perform() {
 		System.out.print("무대에 섭니다. ");
-		singer1.sing();
+		singer.sing();
 	}
 }
 

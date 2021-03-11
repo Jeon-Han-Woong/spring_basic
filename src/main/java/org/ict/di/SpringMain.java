@@ -7,7 +7,7 @@ public class SpringMain {
 		GenericXmlApplicationContext context = 
 				new GenericXmlApplicationContext("file:src/main/webapp/WEB-INF/spring/root-context.xml");
 		
-		Broadcast broadcast = context.getBean("broadcast", Broadcast.class);
+		Broadcast broadcast = context.getBean("mbc", Broadcast.class);
 		
 		broadcast.broad();
 		

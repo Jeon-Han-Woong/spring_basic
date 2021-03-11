@@ -6,7 +6,7 @@ public class JavaMain {
 		
 		Singer sin1 = new Singer();
 		
-		Stage sta1 = new Stage(sin1);
+		Stage sta1 = new Stage();
 		
 		Broadcast broad = new Broadcast(sta1);
 		
